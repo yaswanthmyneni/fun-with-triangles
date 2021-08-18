@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background-color: #3b82f6;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.center {
+  width: 32%;
+  margin: auto;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  background-color: brown;
+}
+
+label {
+  display: block;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
+#zero label {
+  font-size: 2rem;
+}
+
+#zero input {
+  display: block;
+  margin-left: 1rem;
+  height: 1.4rem;
+  width: 60%;
+}
+
+#zero h2 {
+  margin-bottom: 0rem;
+}
+
+#one label {
+  font-size: 2rem;
+}
+
+#one input {
+  display: block;
+  margin-left: 1rem;
+  height: 1.4rem;
+  width: 60%;
+}
+
+#one h2 {
+  margin-bottom: 0rem;
+}
+
+#two label {
+  font-size: 2rem;
+}
+
+#two input {
+  display: block;
+  margin-left: 1rem;
+  height: 1.4rem;
+  width: 60%;
+}
+
+#two h2 {
+  margin-bottom: 0rem;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  background-color: brown;
+  margin: 1rem 0rem;
+}
+
+.result {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.8rem;
+}

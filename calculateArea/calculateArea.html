@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with Triangles</title>
+    <link rel="stylesheet" href="./calculateArea.css">
+</head>
+<body>
+    <section>
+        <div class="center">
+            <a href="../index.html">Go Back</a>
+            <h1>Calculate Area</h1>
+            <h2>Select an option below as per the data you have for a triangle
+            </h2>
+            <form id="myForm">
+                <div>
+                    <label> <input type="radio" name="calculateArea" value="0"/> If you have base and height length</label> 
+                    <label> <input type="radio" name="calculateArea" value="1"/> If you have length of 3 sides</label> 
+                    <label> <input type="radio" name="calculateArea" value="2"/> If you have length of 2 sides and included angle</label> 
+                </div>
+            </form>
+            <button value="submit" id="submit-button">submit</button>
+
+            <div id="zero">
+                <label> base: </label>
+                <input type="number" class="zero-inputs" scroll/>
+                <label> height: </label>
+                <input type="number" class="zero-inputs" scroll/>
+                <button type="submit" id="zero-button">submit</button>
+                <h2>Area will be calculated here-</h2>
+                <div id="zero-result" class="result"></div>
+            </div>
+
+            <div id="one">
+                <label> a: </label>
+                <input type="number" class="one-inputs" scroll/>
+                <label> b: </label>
+                <input type="number" class="one-inputs" scroll/>
+                <label> c: </label>
+                <input type="number" class="one-inputs" scroll/>
+                <button type="submit" id="one-button">submit</button>
+                <h2>Area will be calculated here-</h2>
+                <div id="one-result" class="result"></div>
+            </div>
+
+            <div id="two">
+                <label> b:<input type="number" class="two-inputs" scroll/> </label>
+                <label> c:<input type="number" class="two-inputs" scroll/> </label>
+                <label> angle A:<input type="number" class="two-inputs" scroll/> </label>
+                <button type="submit" id="two-button">submit</button>
+                <h2>Area will be calculated here-</h2>
+                <div id="two-result" class="result"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./calculateArea.js"></script>
+</body>
+</html>
