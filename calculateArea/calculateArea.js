@@ -41,7 +41,9 @@ var areaOfTriZero = () => {
 
   var areaOfTriangle = (1 / 2) * base * height;
 
-  resultZero.innerText = areaOfTriangle;
+  if (base <= 0 || height <= 0) {
+    resultZero.innerText = "Please enter valid base and height";
+  } else resultZero.innerText = areaOfTriangle;
 };
 
 resultZeroBtn.addEventListener("click", areaOfTriZero);
@@ -64,11 +66,10 @@ var areaOfTriOne = () => {
         (semiPerimeter - sideB) *
         (semiPerimeter - sideC)
     ).toFixed(2);
-  resultOne.innerText = areaOfTriangle;
+    resultOne.innerText = areaOfTriangle;
   } else {
     resultOne.innerText = "Please enter correct sides";
   }
-
 };
 
 resultOneBtn.addEventListener("click", areaOfTriOne);
@@ -83,10 +84,13 @@ var areaOfTriTwo = () => {
   var sideC = Number(resultTwoInputs[1].value);
   var angleA = Number(resultTwoInputs[2].value);
 
-  var sinA = Math.sin(angleA);
-  var areaOfTriangle = (1 / 2) * sideB * sideC * sinA;
-
-  resultTwo.innerText = areaOfTriangle;
+  if (sideB <= 0 || sideC <= 0 || angleA <= 0) {
+    resultTwo.innerText = "Please enter valid input";
+  } else {
+    var sinA = Math.sin(angleA);
+    var areaOfTriangle = (1 / 2) * sideB * sideC * sinA;
+    resultTwo.innerText = areaOfTriangle;
+  }
 };
 
 resultTwoBtn.addEventListener("click", areaOfTriTwo);

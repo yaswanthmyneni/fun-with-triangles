@@ -8,11 +8,14 @@ var calAngleOfTriangle = () => {
   var angleThree = parseInt(angles[2].value);
 
   var total = angleOne + angleTwo + angleThree;
-  if (total === 180) {
+  
+  if (angleOne <= 0 || angleTwo <= 0 || angleThree <= 0) {
+    outputDiv.innerText = "Please enter valid angles!!!";
+  } else if (total === 180) {
     outputDiv.innerText = "The given angles will form a triangle";
   } else {
     outputDiv.innerText = "The given angles will not form a triangle";
   }
-}
+};
 
 submitBtn.addEventListener("click", calAngleOfTriangle);
